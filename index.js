@@ -12,9 +12,9 @@ function renderHeroes(heroes) {
   const marcup = heroes
     .map((heroy) => {
       return `
-        <li style="margin-bottom:50px;">
-            <p style="font-size:23px;">Name: ${heroy.name}</p>
-            <img src="${heroy.image}" alt="image">
+        <li class="item">
+            <p class="name">Name: ${heroy.name}</p>
+            <img src="${heroy.image}" alt="image" class="image">
         </li>
         `;
     })
