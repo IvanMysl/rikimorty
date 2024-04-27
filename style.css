@@ -1,3 +1,7 @@
+.heroes__list{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+}
 .item{
     margin-bottom:50px;
 }
@@ -11,6 +15,18 @@
     width: 400px;
     height: 400px;
 }
+@media screen and (max-width:1080px){
+    .heroes__list{
+        display: grid;
+        grid-template-columns: 400px 400px;
+    }
+}
+@media screen and (max-width:768px){
+    .heroes__list{
+        display: grid;
+        grid-template-columns: 400px;
+    }
+}
 @media screen and (max-width:480px) {
     .image{
         width: 300px;
@@ -22,6 +38,7 @@
     .name{
         max-width: 300px;
     }
+
 }
 @media screen and (max-width:320px) {
     .image{
